@@ -155,7 +155,7 @@ body {
 
 #header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.85), rgba(238, 238, 238, 0.85)), url(../../images/Photo-by-Zetong-Li-on-Unsplash.jpg);
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.85), rgba(238, 238, 238, 0.85)), url(../images/Photo-by-Zetong-Li-on-Unsplash.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
