@@ -1,0 +1,73 @@
+.about{
+    position: relative;
+    width: 50rem;
+    height:50rem;
+        text-align: center;
+
+        overflow: hidden;       // dla firerfox
+        border-radius: 50%;  
+    
+        box-shadow: 0 0 3rem rgba($color-black, .25);
+
+        @include respond(tab-land){
+            width: 40rem;
+            height:40rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include respond(tab-port){
+            
+            width: 35rem;
+            height:35rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include respond(phone){
+            
+            width: 25rem;
+            height:25rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    img{
+        height: 100%;
+        transform: translate(-3.5rem,-4rem) scale(1.2); 
+        backface-visibility: hidden;
+
+        
+        
+        @include respond(tab-land){
+            transform: translate(-1.5rem,-2rem) scale(1.2);
+
+            
+        }
+        @include respond(tab-port){
+            transform: translate(-1.5rem,-1rem) scale(1.5);
+
+        }
+        @include respond(phone){
+            
+            transform: translate(-1.5rem,-1rem) scale(1.5);
+        }
+       
+    }
+    
+    &__text{
+       
+        padding-top: 7%;
+       
+        @include respond(tab-port){
+            padding-top: 0;
+        }
+        @include respond(phone){
+            padding-top: 0;
+        }
+       
+    }
+    &__text p{
+       
+       text-align: justify;
+      font-size: $defaulf-font-size;
+    }
+}

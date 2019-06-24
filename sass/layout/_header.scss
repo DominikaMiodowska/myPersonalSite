@@ -1,0 +1,63 @@
+#header{
+    height: 85vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-light-1, 0.85),
+        rgba($color-grey-light-2, 0.85)),
+        url(../../images/Photo-by-Zetong-Li-on-Unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+
+    // clip-path: polygon(0 0, 100% 0, 100% 100%,
+    //  75% 75vh,
+    //  50% 100% ,
+    //  25% 75vh,
+    //  0 100% );
+    -webkit-clip-path:polygon(0 0, 100% 0, 100% 100%,
+     85% 85vh,
+     66% 100%,
+     51% 85vh,
+     35% 100%,
+     15% 85vh,
+     0 100% );
+    clip-path: polygon(0 0, 100% 0, 100% 100%,
+     85% 85vh,
+     66% 100%,
+     51% 85vh,
+     35% 100%,
+     15% 85vh,
+     0 100% );
+     // dla firerfox
+    @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%,
+        85% 85vh,
+        66% 100%,
+        51% 85vh,
+        35% 100%,
+        15% 85vh,
+        0 100% );
+        clip-path: polygon(0 0, 100% 0, 100% 100%,
+        85% 85vh,
+        66% 100%,
+        51% 85vh,
+        35% 100%,
+        15% 85vh,
+        0 100% );
+        height: 95vh
+    }
+
+}
+.header{
+    padding: 25rem 0;
+   
+    &__text-box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);       /* wysrodkowanie left & right */
+        text-align: center;
+
+    }
+}

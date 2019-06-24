@@ -1,0 +1,98 @@
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .10;
+    background-color : #C96195;
+
+    &__content{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.skills{
+    position: relative;
+   background-color: transparent;
+  padding: 12rem 20rem 5rem; 
+
+
+   @include respond(tab-port){
+       padding: 10rem 0;
+   }
+   @include respond(phone){
+       padding: 8rem 0 2rem;
+   }
+
+&-icon{
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    i{
+        font-size: 10rem;
+        padding:10px 0;
+    }
+   
+    
+    &--box{
+        min-width: 25rem;
+        min-height: 20rem;
+        justify-items: center;
+        text-align: center;
+        transition: transform .2s;
+    }
+    &--box:hover{
+        transform: scale(1.25);
+        
+    }
+
+    &--box:not(:last-child){
+        margin-bottom: 10rem;
+
+        
+        @include respond(tab-port){   
+        margin-bottom: 6rem;
+        }
+        @include respond(phone){
+            margin-bottom: 3rem;
+        }
+    }
+    
+
+        .fa{
+            
+            &-html5{
+                color: #DD4D25;
+            }
+            &-css3{
+                color: #006FB9;
+            }
+            &-js-square{
+                color: #F8DF00;
+            }
+            &-node-js{
+                color: #4CAB4F;
+            }
+            &-bootstrap{
+                color: #68409B;
+            }
+            &-sass{
+                color: #C96195;
+            }
+
+
+        }
+    }
+
+    &--text{
+        text-transform: uppercase;
+        color: black;
+        text-align: center;
+    }
+}

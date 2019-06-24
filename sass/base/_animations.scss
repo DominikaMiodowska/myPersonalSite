@@ -1,0 +1,35 @@
+@keyframes moveInLeft {
+
+    /*  przesuwanie sie primary-main */
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem) rotate(0deg);
+    }
+
+    60% {
+        transform: translateX(1rem)         /* rotate(-180deg); */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)           /* rotate(180deg);*/
+    }
+}
+
+@keyframes moveInRight {
+
+    /*  przesuwanie sie primary-sub */
+    0% {
+        opacity: 0;
+        transform: translateX(10rem)            /*rotate(0deg);*/
+    }
+
+    60% {
+        transform: translateX(-1rem)            /*rotate(-180deg); */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)            /*rotate(180deg);*/
+    }
+}
